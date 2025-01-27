@@ -48,7 +48,6 @@
 
     const dayOfWeek = getDayOfWeek(day, month, year);
 
-    // Get the Akan name based on gender and day of the week
     const akanName = getAkanName(gender, dayOfWeek);
 
     document.getElementById(
