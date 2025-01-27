@@ -29,11 +29,11 @@
     } else if (gender === "female") {
       return femaleAkannames[dayOfWeek];
     }
-    return ""; // Default empty if gender is not set
+    return ""; 
   }
 
   function handleSubmit(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
 
     // Get the form inputs
     const day = document.getElementById("day").value;
@@ -41,13 +41,11 @@
     const year = document.getElementById("year").value;
     const gender = document.getElementById("gender").value;
 
-    // Validate if inputs are empty
     if (!day || !month || !year || !gender) {
       alert("Please fill out all the fields.");
       return;
     }
 
-    // Get the day of the week for the entered birthdate
     const dayOfWeek = getDayOfWeek(day, month, year);
 
     // Get the Akan name based on gender and day of the week
