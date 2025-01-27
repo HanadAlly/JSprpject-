@@ -2,10 +2,9 @@
   // This will be used in the handleSubmit to calculate the Akan name
   function getDayOfWeek(day, month, year) {
     let birthDate = new Date(year, month - 1, day); // Month is 0-indexed
-    return birthDate.getDay(); // Returns a number 0-6 for the day of the week
+    return birthDate.getDay();
   }
 
-  // This function will return the Akan name based on gender and the day of the week
   function getAkanName(gender, dayOfWeek) {
     let maleAkannames = [
       "Kwasi",
