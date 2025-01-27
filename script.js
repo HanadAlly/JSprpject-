@@ -1,4 +1,4 @@
-(function calculateDayOfWeek() {
+function calculateDayOfWeek() {
   function getDayOfWeek(day, month, year) {
     let birthDate = new Date(year, month - 1, day);
     return birthDate.getDay();
@@ -56,4 +56,4 @@
   }
 
   document.getElementById("form").addEventListener("submit", handleSubmit);
-})();
+};
