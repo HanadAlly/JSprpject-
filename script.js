@@ -1,7 +1,6 @@
 (function calculateDayOfWeek() {
-  // This will be used in the handleSubmit to calculate the Akan name
   function getDayOfWeek(day, month, year) {
-    let birthDate = new Date(year, month - 1, day); // Month is 0-indexed
+    let birthDate = new Date(year, month - 1, day);
     return birthDate.getDay();
   }
 
