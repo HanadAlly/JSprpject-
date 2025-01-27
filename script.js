@@ -51,12 +51,10 @@
     // Get the Akan name based on gender and day of the week
     const akanName = getAkanName(gender, dayOfWeek);
 
-    // Display the Akan name in the result section
     document.getElementById(
       "output"
     ).textContent = `Your Akan name is: ${akanName}`;
   }
 
-  // Add event listener for form submission
   document.getElementById("form").addEventListener("submit", handleSubmit);
 })();
