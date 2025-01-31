@@ -35,7 +35,6 @@ function calculateDayOfWeek() {
   function handleSubmit(event) {
     event.preventDefault(); 
 
-    // Get the form inputs
     const day = document.getElementById("day").value;
     const month = document.getElementById("month").value;
     const year = document.getElementById("year").value;
